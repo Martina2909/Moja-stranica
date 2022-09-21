@@ -1,0 +1,34 @@
+@media screen and (max-width:600px) {
+    body{
+        margin: 15px;
+    }
+    .navigacija{
+        display: none;
+    }
+    .tekst{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .fotografija {
+      width: 100%;
+      margin-right: 10px;
+    }
+    .raspored{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .raspored h3{
+        padding-bottom: 3px;
+    }
+    .slika{
+        width: 100%;
+    }
+    .slika img{
+        justify-content: center;
+    }
+    form{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
