@@ -3,51 +3,79 @@ body{
     margin: 20px;
 }
 
+@font-face{
+    font-family: 'passionsConflict';
+    src: url("font/PassionsConflict-Regular.ttf");
+}
+
 /*Navigacija*/
-.navigacija{
+header{
     text-align: center;
     width: 100%;
 }
 
-.navigacija ul{
+header ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navigacija li{
+header li{
     display: inline;
     text-transform: uppercase;
     margin-left: 8px; 
 }
 
-.navigacija a{
+header a{
     text-decoration: none;
     color: white;
-    font-family: Century Gothic, sans-serif, Calibri;
     font-weight: lighter;
     padding-left: 5px;
     position: relative;
 }
 
-.navigacija a:hover{
+header a:hover{
     color: #c4d3d8;
 }
 
 .aktivna {
-   border-bottom: white 1px solid;
+   text-decoration: underline white 1px;
 }
 
 .desno{
     border-right: 1px solid white;
 }
 
+.hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+  }
+  
+.linija1, .linija2, .linija3 {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    margin-top: 0;
+    transition: 0.4s;
+  }
+  
+.change .linija1 {
+    transform: translate(0, 10px) rotate(-45deg);
+  }
+  
+.change .linija2 {opacity: 0;}
+  
+.change .linija3 {
+    transform: translate(0, -10px) rotate(45deg);
+  }
+
 
 /*Naslovna*/
 .glavni_naslov{
     color: white;
     font-size: 50px;
-     font-family: Century Gothic, sans-serif, Calibri;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -73,7 +101,6 @@ body{
 }
 
 .raspored h3{
-     font-family: Century Gothic, sans-serif, Calibri;
     color: white;
     text-transform: uppercase;
     font-weight: lighter;
@@ -95,14 +122,12 @@ body{
 .raspored li{
     list-style-position: inside;
     color:white;
-    text-decoration: underline 1px;
     line-height: 1.5em;
 }
 
 .raspored a{
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
-     font-family: Century Gothic, sans-serif, Calibri;
     font-weight: lighter;
 }
 
@@ -140,7 +165,6 @@ body{
 }
 
 .tekst p, .tekst h3{
-     font-family: Century Gothic, sans-serif, Calibri;
     color: white;
     font-weight: lighter;
     text-align: center;
@@ -156,71 +180,31 @@ body{
 /*Galerija*/
 .galerija{
     margin-top: 6%;
-}
-
-.galerija:after {
-    content: "";
-    display: table;
-    clear: both;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .fotografija{
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    height: 300px;   
+    height: 300px;  
 }
 
 .fotografija:hover {
     border: 1px solid #777;
 }
 
-.fotografija img {
-   width: 100%;
-  height: 100%;
-  object-fit: cover;
+.fotografija img{
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 .fotografija img:hover{
     cursor: pointer;
 }
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1; 
-    padding-top: 20px; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9); 
-  }
-
-.modal-sadrzaj {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-
-.zatvori {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-.zatvori:hover, .zatvori:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
 
 /*Kontakt*/
@@ -260,7 +244,6 @@ input{
 input, label{
     display: block;
     color: white;
-     font-family: Century Gothic, sans-serif, Calibri;
     font-weight: lighter;
 }
 
@@ -297,16 +280,12 @@ textarea{
 /*Footer*/
 footer{
     color: white;
-     font-family: Century Gothic, sans-serif, Calibri;
     font-weight: lighter;
     font-size: 13px;
     text-align: center;
     bottom:8px;
     width:100%;
-    position: fixed;
     clear: both;
-
-  
 }
 
 footer p{
@@ -318,7 +297,6 @@ footer p{
 #danasnji_datum{
     display: inline-block;
     padding-left: 4px;
-     font-family: Century Gothic, sans-serif, Calibri;
 }
 
 

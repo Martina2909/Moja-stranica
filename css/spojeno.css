@@ -1,0 +1,92 @@
+/*Mobilni prikaz*/
+@media screen and (max-width:600px) {
+    body{
+        margin: 15px;
+    }
+    .nav-izbornik{
+        display: none;
+    }
+    .nav-sadrzaj{
+        margin: 16px;
+    }
+    .hamburger{
+        margin-bottom: 10px;
+        display: block;
+    }
+    .galerija{
+        display: block;
+    }
+    .tekst{
+        width: 100%;
+    }
+    .fotografija {
+      width: 100%;
+      margin-right: 10px;
+    }
+    .raspored{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .raspored h3{
+        padding-bottom: 3px;
+    }
+    .slika{
+        width: 100%;
+    }
+    .slika img{
+        justify-content: center;
+    }
+    form{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+    }
+    .footer{
+        position: fixed;
+    }
+    .footer.dno{
+        position: unset;
+    }
+    
+}
+
+/*Tablet prikaz*/
+@media screen and (min-width:900px) {
+    .fotografija {
+      width: 32%;
+    }
+    .raspored{
+        width: 33%;
+    }
+    .hamburger{
+        display: none;
+    }
+    .footer{
+        position: fixed;
+    }
+    .mobile-container{
+        display: none;
+    }
+}
+  
+
+
+/*Računalni prikaz*/
+@media screen and (min-width:1100px) {
+    .fotografija {
+    width: 24.3%;
+      float: left;
+      box-sizing: border-box;
+    }
+    .hamburger{
+        display: none;
+    }
+   .footer{
+        position: fixed;
+    }
+    .mobile-container{
+        display: none;
+    }
+    
+  }

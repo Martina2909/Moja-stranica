@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naslovna</title>
     <link rel="stylesheet" href="css/stil.css">
-    <link rel="stylesheet" href="css/racunalni_prikaz.css">
-    <link rel="stylesheet" href="css/tablet_prikaz.css">
-    <link rel="stylesheet" href="css/mobilni_prikaz.css">
+    <link rel="stylesheet" href="css/spojeno.css">
 </head>
 <body>
-        <div class="navigacija">
-            <nav>
-                <ul>
-                    <li><a href="mojgrad.html">Moj grad</a></li>
-                    <li class="desno"  ></li>
-                    <li><a href="omeni.html">O meni</a></li>
+        <header>
+            <nav id="navigacija" class="nav">
+                <ul class="nav-izbornik">
+                    <li class="nav-sadrzaj">
+                        <a href="mojgrad.html">Moj grad</a></li>
                     <li class="desno"></li>
-                    <li><a href="galerija.html">Galerija</a></li>
-                    <li class="desno"  ></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-sadrzaj">
+                        <a href="omeni.html">O meni</a></li>
+                    <li class="desno"></li>
+                    <li class="nav-sadrzaj">
+                        <a href="galerija.html">Galerija</a></li>
+                    <li class="desno"></li>
+                    <li class="nav-sadrzaj">
+                        <a href="kontakt.html">Kontakt</a></li>
                 </ul>
+                <div class="hamburger" onclick="myFunction(this)">
+                    <div class="linija1"></div>
+                    <div class="linija2"></div>
+                    <div class="linija3"></div>
+                </div>
             </nav>
-        </div> 
+        </header> 
 
     <h1 class="glavni_naslov">
         MOJA STRANICA
     </h1>
+    <div class="popuni"></div>
     
 
-<div class="datum">
-    <footer>
+<div class="datum" >
+    <footer class="footer">
         <p>Moja stranica.</p> All Rights Reserved &copy 
         <div id="danasnji_datum"></div>
     </footer>

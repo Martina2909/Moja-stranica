@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="css/stil.css">
-    <link rel="stylesheet" href="css/racunalni_prikaz.css">
-    <link rel="stylesheet" href="css/tablet_prikaz.css">
-    <link rel="stylesheet" href="css/mobilni_prikaz.css">
+    <link rel="stylesheet" href="css/spojeno.css">
 </head>
 <body>
-    <div class="navigacija">
-        <nav>
-            <ul>
-                <li><a href="index.html">Naslovna</a></li>
+    <header>
+        <nav class="navigacija">
+            <ul class="nav-izbornik">
+                <li class="nav-sadrzaj">
+                    <a href="index.html">Naslovna</a></li>
                 <li class="desno"></li>
-                <li><a href="mojgrad.html">Moj grad</a></li>
+                <li class="nav-sadrzaj">
+                    <a href="mojgrad.html" >Moj grad</a></li>
                 <li class="desno"></li>
-                <li><a href="omeni.html">O meni</a></li>
+                <li class="nav-sadrzaj">
+                    <a href="omeni.html">O meni</a></li>
                 <li class="desno"></li>
-                <li><a href="galerija.html">Galerija</a></li>
+                <li class="nav-sadrzaj">
+                    <a href="galerija.html">Galerija</a></li>
                 <li class="desno"></li>
-                <li><a class="aktivna" href="#">Kontakt</a></li>
+                <li class="nav-sadrzaj">
+                    <a href="#" class="aktivna">Kontakt</a></li>
             </ul>
+            <div class="hamburger" onclick="myFunction(this)">
+                <div class="linija1"></div>
+                <div class="linija2"></div>
+                <div class="linija3"></div>
+            </div>
         </nav>
-    </div>
+    </header> 
 
     <div class="obrazac">
-        <form action="#" method="get" method="post" action="http://your-web-domain.com/cgi-bin/formmail.cgi" onsubmit="return checkform(this);">
+        <form method="get" action="" onsubmit="return checkform(this);">
             <label for="ime">Puno ime</label>
             <input type="text" id="ime" name="ime" placeholder="Puno ime" >
 
@@ -44,7 +52,7 @@
 
     
 <div class="datum">
-    <footer>
+    <footer class="footer">
         MOJA STRANICA. All Rights Reserved &copy 
         <div id="danasnji_datum"></div>
     </footer>
